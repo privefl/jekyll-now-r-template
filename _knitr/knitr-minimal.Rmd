@@ -30,18 +30,10 @@ This is the Gaussian integral equation: $$\int_{-\infty}^{+\infty} e^{-x^2}~dx =
 
 ## Plots
 
-```{r}
-knitr::opts_chunk$set(fig.width=7, fig.height=5, fig.path = "../knitr_files/")
-```
-
-
-```{r}
+```{r, fig.align='center', fig.cap="This is a nice plot."}
 curve(exp(-x^2), -2.5, 2.5)
 ```
 
 ## Images
 
-<div style="text-align:center">    
-  ![Thanks GitHub for hosting my website!](http://moduslaborandi.net/wp-content/uploads/2015/05/github.pages.jpg)
-</div>
-
+![Thanks GitHub for hosting my website!](http://moduslaborandi.net/wp-content/uploads/2015/05/github.pages.jpg)<!--CENTER-->
