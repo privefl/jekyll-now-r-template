@@ -56,30 +56,49 @@ FormatPost <- function(convert_file, githubrepo = NULL) {
   lines.md <- gsub(pattern = "$$$$", replacement = "\n\n$$\n\n", 
                    lines.md, fixed = TRUE)
   
-  # Change relative path to figures
+  # Change path to figures
   base.prefix <- basename(prefix)
   base.dir <- dirname(prefix)
   pattern <-  paste0(base.prefix, "_files")
   tmp <- gsubfn::strapply(lines.md, pattern)
   ind <- which(!sapply(tmp, is.null))
   for (i in ind) {
-    lines.md[i] <- 
-      gsubfn::gsubfn(pattern, file.path("..", base.dir, tmp[[i]][1]), lines.md[i])
+    lines.md[i] <-
+      gsubfn::gsubfn(pattern, file.path("{{ site.baseurl }}", "knitr_files",
+                                        tmp[[i]][1]), lines.md[i])
   }
+  dir.source <- file.path(base.dir, pattern)
+  dir.target <- "knitr_files"
+  if (!dir.exists(dir.target)) dir.create(dir.target)
+  file.copy(from = dir.source, to = dir.target, 
+            overwrite = TRUE, recursive = TRUE)
   
-  # Center images
-  tmp <- gsubfn::strapply(lines.md, "!\\[.*\\]\\(.+\\)<!--CENTER-->")
+  # Change path to images
+  pattern <- file.path("\\.\\.", "images")
+  tmp <- gsubfn::strapply(lines.md, pattern)
   ind <- which(!sapply(tmp, is.null))
   for (i in ind) {
-    img.text <- gsubfn::strapply(tmp[[i]], "!\\[(.*)\\]\\(.+\\)<!--CENTER-->")[[1]]
-    img.url <- gsubfn::strapply(tmp[[i]], "!\\[.*\\]\\((.+)\\)<!--CENTER-->")[[1]]
-    lines.md[i] <- 
-      gsubfn::gsubfn("!\\[.*\\]\\(.+\\)<!--CENTER-->", 
-                     paste("<div class=\"figure\" style=\"text-align: center\">",
-                           paste0("<img src=\"", img.url, 
-                                  "\" alt=\"", img.text, "\"  />"),
-                           paste0("<p class=\"caption\">", img.text, "</p>"),
-                           "</div>", sep = "\n"), lines.md[i])
+    lines.md[i] <-
+      gsubfn::gsubfn(pattern, file.path("{{ site.baseurl }}", "images"), lines.md[i])
+  }
+  
+  # Center images and add proper caption
+  tmp <- gsubfn::strapply(lines.md, "!\\[[^]]*\\]\\([^)]+\\)")
+  ind <- which(!sapply(tmp, is.null))
+  for (i in ind) {
+    for (k in 1:length(tmp[[i]])) {
+      img.text <- gsubfn::strapply(tmp[[i]][k], "!\\[(.*)\\]\\(.+\\)")[[1]]
+      img.url <- gsubfn::strapply(tmp[[i]][k], "!\\[.*\\]\\((.+)\\)")[[1]]
+      caption <- ifelse(img.text == "", "", 
+                        paste0("<p class=\"caption\">", img.text, "</p>"))
+      lines.md[i] <- 
+        gsubfn::gsubfn(sprintf("!\\[%s\\]\\(%s\\)", img.text, img.url), 
+                       paste("<div class=\"figure\" style=\"text-align: center\">",
+                             paste0("<img src=\"", img.url, 
+                                    "\" alt=\"", img.text, "\"  />"),
+                             caption,
+                             "</div>", sep = "\n"), lines.md[i])
+    }
   }
   
   # replace file with new lines

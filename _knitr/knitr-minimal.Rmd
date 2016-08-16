@@ -36,4 +36,8 @@ curve(exp(-x^2), -2.5, 2.5)
 
 ## Images
 
-![Thanks GitHub for hosting my website!](http://moduslaborandi.net/wp-content/uploads/2015/05/github.pages.jpg)<!--CENTER-->
+![Jekyll Now is the base of this template](https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png)<!--CENTER-->
+
+When using the syntax ``![]()`` for an image, it should be centered in your future post after using ``FormatPost``. It should also have a proper caption.
+
+![](../images/github-pages.jpg) ![Blabla](https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png) ![Thanks GitHub for hosting my website!](../images/github-pages.jpg)
