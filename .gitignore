@@ -12,3 +12,4 @@ package.json
 .Rhistory
 jekyll-now-r-template.Rproj
 _posts/*.html$
+README.html

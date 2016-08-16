@@ -101,7 +101,8 @@ FormatPost <- function(convert_file, githubrepo = NULL) {
     }
   }
   
-  # replace file with new lines
+  # create file with new lines
+  if (!dir.exists("_posts")) dir.create("_posts")
   writeLines(lines.md, md.path, useBytes = TRUE)
   
   return(md.path)
