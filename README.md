@@ -1,3 +1,5 @@
+# This is not yet ready for use
+
 # Add a blog to your website in minutes
 
 This is a template (and tutorial) for creating your blog with R Markdown in minutes.
