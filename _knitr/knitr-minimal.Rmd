@@ -2,15 +2,16 @@
 title: A minimal R Markdown example
 date: August 15, 2016
 output: 
-  html_document:
-    keep_md: true
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
 ---
 
 ## Quotes
 
 > I love R and I like writing articles with R Markdown.
 
-# Lists
+## Lists
 
 This is a bullet list:
 
@@ -36,8 +37,10 @@ curve(exp(-x^2), -2.5, 2.5)
 
 ## Images
 
-![Jekyll Now is the base of this template](https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png)<!--CENTER-->
+- An image from Barry Clark's GitHub account:
 
-When using the syntax ``![]()`` for an image, it should be centered in your future post after using ``FormatPost``. It should also have a proper caption.
+![Jekyll Now is the base of this template](https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png)
 
-![](../images/github-pages.jpg) ![Blabla](https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png) ![Thanks GitHub for hosting my website!](../images/github-pages.jpg)
+- A local image:
+
+![Thanks GitHub for hosting my website!](../images/github-pages.jpg)

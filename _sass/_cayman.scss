@@ -1,0 +1,102 @@
+.entry:first-child {
+  margin-top: 0;
+}
+.entry img {
+  max-width: 100%;
+}
+.entry h1, .entry h2, .entry h3, .entry h4, .entry h5, .entry h6 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  color: #159957;
+}
+.entry p {
+  margin-bottom: 1em;
+}
+.entry code {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #567482;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+  white-space:pre-wrap
+}
+.entry pre {
+  padding: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  color: #567482;
+  word-wrap: normal;
+  background-color: #f3f6fa;
+  border: solid 1px #dce6f0;
+  border-radius: 0.4rem;
+  line-height: 1.45;
+  overflow: hidden;
+}
+
+.entry pre code, .entry pre tt {
+  display: inline;
+  padding: 0;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+.entry pre code:before, .entry pre code:after, .entry pre tt:before, .entry pre tt:after {
+  content: normal;
+}
+.entry ul, .entry ol {
+  margin-top: 0;
+}
+.entry blockquote {
+  padding: 0 1rem;
+  margin-left: 0;
+  font-size: 1.2rem;
+  color: #819198;
+  border-left: 0.3rem solid #dce6f0;
+}
+.entry blockquote>:first-child {
+  margin-top: 0;
+}
+.entry blockquote>:last-child {
+  margin-bottom: 0;
+}
+.entry table {
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 1rem 0;
+}
+.entry table th {
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
+}
+.entry table th, .entry table td {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #e9ebec;
+  text-align: left;
+}
+.entry table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.entry dl {
+  padding: 0;
+}
+.entry dl dt {
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.entry dl dd {
+  padding: 0;
+  margin-bottom: 1rem;
+}
