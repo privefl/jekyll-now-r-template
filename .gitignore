@@ -11,5 +11,4 @@ package.json
 .Rproj.user
 .Rhistory
 jekyll-now-r-template.Rproj
-_posts/*.html$
 README.html
