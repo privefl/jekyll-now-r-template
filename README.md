@@ -49,7 +49,7 @@ Pretty close, no?
 
 ## Why should you care?
 
-I wanted something for creating my website, blog and posting on it, that 
+I wanted something for creating my website, blogging and posting on it, that 
 
 - was very simple to use,
 - didn't need any further installation (no Jekyll, Ruby or whatever),
