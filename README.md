@@ -56,7 +56,7 @@ I wanted something for creating my website, blog and posting on it, that
 
 ## Conclusion
 
-As a reminder, most credit goes to the contributors of [Jekyll Now](https://github.com/barryclark/jekyll-now) and its author Barry Clark. I used parts of the css files and templates in [package prettydoc](https://github.com/yixuan/prettydoc).
+As a reminder, most credit goes to the contributors of [Jekyll Now](https://github.com/barryclark/jekyll-now) and its author Barry Clark. I also used parts of the css files and templates in [package prettydoc](https://github.com/yixuan/prettydoc).
 
 If anything is false or not clear enough, feel free to contact me or open an issue. 
 
