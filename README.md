@@ -45,6 +45,7 @@ You can see for example the blog part of [my own website](https://privefl.github
 For example, 
 
 - see [this post](https://privefl.github.io/blog/R-package-primefactr/) and what was [its html preview in RStudio](https://htmlpreview.github.io/?https://github.com/privefl/blog/blob/gh-pages/_knitr/post-primefactr.html). 
+Pretty close, no?
 
 ## Why should you care?
 
