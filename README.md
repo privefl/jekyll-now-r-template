@@ -12,7 +12,7 @@ I'm no expert in HTML so some lines of code may be useless.
 
 ### Prerequisites
 
-- Make sure that you have the latest versions of R, RStudio and package knitr. 
+- Make sure that you have the latest versions of R and RStudio.
 - Install package prettyjekyll with `devtools::install_github("privefl/prettyjekyll")`.
 - Make sure that you have enabled Git in RStudio. More information can be found [there](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN).
 - You need a GitHub account. 
