@@ -31,8 +31,8 @@ I'm no expert in HTML so some lines of code may be useless.
 
 - Create an Rmd document with the template from package prettyjekyll.
 - Fill it, previewing the result with the Knit button. The main content should be the same in your future post.
-- When you have finished, use `prettyjekyll::FormatPost` on your R Markdown file and commit/push the changes.
-- Go verify that it renders well on yhour blog. 
+- When you have finished, use `prettyjekyll::FormatPost` on your R Markdown file and commit/push the changes from RStudio.
+- Go verify that it renders well on your blog. 
 
 ### Requirements and features of FormatPost
 
