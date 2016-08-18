@@ -2,7 +2,7 @@
 
 This is a template (and tutorial) for creating your blog with R Markdown in minutes.
 
-# Implementation
+## Implementation
 
 This template is mostly based on [Jekyll Now](https://github.com/barryclark/jekyll-now). It adds some adjustments to properly render your posts based on R Markdown files.
 I'm no expert in HTML so some lines of code may be useless.
