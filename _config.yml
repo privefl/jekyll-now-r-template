@@ -14,8 +14,10 @@ avatar:
 # Your website URL (e.g. https://barryclark.github.io or https://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 url: 
+
 # Here, copy url and add '/blog' at the end (e.g. https://privefl.github.io/blog)
 baseurl: 
+
 
 #
 # Flags below are optional
