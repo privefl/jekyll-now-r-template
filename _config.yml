@@ -11,9 +11,11 @@ description:
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: 
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Your website URL (e.g. https://barryclark.github.io or https://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: 
+# Here, copy url and add '/blog' at the end (e.g. https://privefl.github.io/blog)
+baseurl: 
 
 #
 # Flags below are optional
@@ -44,11 +46,7 @@ disqus:
 google_analytics:
 
 
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: "/blog"
+
 
 #
 # !! You don't need to change any of the configuration flags below !!
