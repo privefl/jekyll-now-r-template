@@ -14,15 +14,11 @@
   margin-bottom: 1em;
 }
 .entry code {
-  padding: 0;
-  margin: 0;
-  font-size: 1rem;
-  color: #567482;
-  word-break: normal;
-  white-space: pre;
-  background: transparent;
-  border: 0;
-  white-space:pre-wrap
+  padding: 2px 4px;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  color: #383e41;
+  background-color: #f3f6fa;
+  border-radius: 0.3rem;
 }
 .entry pre {
   padding: 0.8rem;
