@@ -23,7 +23,7 @@ I'm no expert in HTML so some lines of code may be useless.
 - Fork this repo and rename it to be 'blog' (in Settings of your brand new repo).
 - Get the link from cloning the repo. Then, go to RStudio, create a New Project > Version Control > Git and copy this link. You have cloned your new repo as an R project.
 - Modify `_config.yml`.
-- Go knit the R Markdown file in directory `_knitr`. Then use `prettyjekyll::FormatPost("_knitr/knitr-minimal.Rmd")` in the console.
+- Go knit the R Markdown file in directory `_knitr` if you want to see its HTML preview in RStudio. Then use `prettyjekyll::FormatPost("_knitr/knitr-minimal.Rmd")` in the console.
 - Commit and push everything from RStudio.
 - Go see this post at https://YOURGITHUB.github.io/blog.
 
